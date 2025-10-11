@@ -13,34 +13,20 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+  <section
+    class="relative h-screen bg-cover bg-center"
+    style="background-image: url('/src/assets/images/ag_web_hero.jpg');"
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
-    </Fragment>
+    <div class="absolute inset-0 bg-black/40"></div>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
-  </Hero>
+    <Hero>
+      <div class="relative z-10 text-center text-white flex flex-col items-center justify-center h-full">
+        <h1 class="text-5xl font-bold mb-4">Мой Hero во весь экран</h1>
+        <p class="text-lg opacity-90">С фоном через внешний контейнер</p>
+      </div>
+    </Hero>
+  </section>
+
 
   <!-- Content Widget **************** -->
 
