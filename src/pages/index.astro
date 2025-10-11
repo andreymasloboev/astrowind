@@ -13,19 +13,25 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <section
-    class="relative h-screen bg-cover bg-center"
-    style="background-image: url('/src/assets/images/ag_web_hero.jpg');"
-  >
-    <div class="absolute inset-0 bg-black/40"></div>
+<section
+  class="relative h-screen bg-cover bg-center"
+  style="background-image: url('/src/assets/images/ag_web_hero.jpg');"
+>
 
-    <Hero>
-      <div class="relative z-10 text-center text-white flex flex-col items-center justify-center h-full">
-        <h1 class="text-5xl font-bold mb-4">Мой Hero во весь экран</h1>
-        <p class="text-lg opacity-90">С фоном через внешний контейнер</p>
-      </div>
-    </Hero>
-  </section>
+  <!-- ТЕКСТ СВЕРХУ -->
+  <div class="absolute top-32 left-0 w-full text-center text-идфсл py-6 z-20">
+    <h2 class="text-6xl font-semibold tracking-wide">Мы производим</h2>
+  </div>
+
+  <!-- Основной контент -->
+  <Hero>
+    <div class="relative z-10 text-center text-white flex flex-col items-center justify-center h-full">
+      <h1 class="text-5xl font-bold mb-4">Мой Hero во весь экран</h1>
+      <p class="text-lg opacity-90">С фоном через внешний контейнер</p>
+    </div>
+  </Hero>
+</section>
+
 
 
   <!-- Content Widget **************** -->
