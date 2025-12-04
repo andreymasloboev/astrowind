@@ -10,7 +10,7 @@ export const headerData = {
           href: getPermalink('/homes/oil'),
         },
         {
-          text: 'Рапсовое жмых',
+          text: 'Рапсовый жмых',
           href: getPermalink('/homes/gmuh'),
         },
       ],
